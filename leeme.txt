@@ -1,0 +1,11 @@
+Tecnologías utilizadas:
+ - HTML
+ - CSS
+ - JavaScript
+	- JQuery para manipular el DOM con el mapa de navegación
+
+Otra información
+Al pasar el validador de CSS en styles/style.css, me salta redificinición de max-width al redefinirlo de forma distinta
+en las media queries para hacer el sitio responsivo, también me dice que hay redefinción de grid-row-start, grid-row-end, grid-row-start y grid-row-end
+en la lina 0, se refiere también a el uso de grid-row dentro de media queries, la única forma de hacer que no me salten las advertencias es
+quitando las media queries y no voy a hacer eso.

@@ -1,0 +1,22 @@
+{
+	"index.html": {
+		"text": "Inicio",
+		"accesskey": "i"
+	},
+	"intereses.html": {
+		"text": "Intereses",
+		"accesskey": "n"
+	},
+	"proyectos.html": {
+		"text": "Proyectos",
+		"accesskey": "p"
+	},
+	"aficciones.html": {
+		"text": "Aficciones",
+		"accesskey": "a"
+	},
+	"calcetines.html": {
+		"text": "Calcetines",
+		"accesskey": "a"
+	}
+}
