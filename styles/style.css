@@ -178,7 +178,6 @@ video {
 	max-height: 70dvh;
 }
 
-/* RESPONSIVE DESIGN */
 @media only screen and (min-width: 600px) {
 	main {
 		grid-template-columns: max-content 1fr;
@@ -205,9 +204,37 @@ video {
 	main > #section_nav {
 		width: 100dvw;
 		grid-row: 1;
-		position: static;
+		position: sticky;
 	}
 	#personal_img {
 		max-width: 40dvh;
 	}
+}
+
+.interest {
+	margin: 1rem;
+	block-size: border-block;
+}
+
+.interest p:last-of-type
+{
+	margin-left: .5rem;
+	margin-top: .5rem;
+}
+
+.interest p:first-of-type
+{
+	margin-top: .5rem;
+}
+
+.interest h4 i{
+	color: #bbb;
+	margin-left: .5rem;
+	margin-bottom: .2rem;
+}
+
+.main_section hr {
+	width: 90%;
+	height: 1px;
+	color: lightgreen;
 }
