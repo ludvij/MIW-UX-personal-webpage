@@ -16,14 +16,7 @@ export function generate_nav() {
 		}
 		else
 		{
-			if (entry == 'index.html')
-			{
-				a.attr('href', '/')	
-			}
-			else
-			{
-				a.attr('href',entry)
-			}
+			a.attr('href',entry)
 		}
 		tag_nav.append(a)
 	}
