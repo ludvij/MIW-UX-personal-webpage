@@ -274,13 +274,14 @@ video {
 #contact_section {
 	display: grid;
 	grid-template-columns: 6em auto;
-	row-gap: .25em;
+	row-gap: .35em;
 }
+
 #contact_section label {
 	color: #bbb;
 }
 
-#contact_section h3 {
+#contact_section h2 {
 	grid-column: span 2;
 }
 
