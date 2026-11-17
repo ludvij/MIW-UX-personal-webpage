@@ -177,6 +177,7 @@ video {
 		width: 10em;
 		min-width: fit-content;
 		grid-column: 1;
+		position: sticky;
 	}
 
 	#personal_img {
