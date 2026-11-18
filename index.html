@@ -16,6 +16,7 @@
 	<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
 		integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous">
 		</script>
+	<script src="src/generate_nav.js" type="module"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 		<section class="main_section index-section">
 			<h1>Luis Vijande González</h1>
 			<section id="section_image">
-				<img id="personal_img" src="/media/personal_img.jpg" alt="Imagen del autor de la página">
+				<img id="personal_img" src="public/media/personal_img.jpg" alt="Imagen del autor de la página">
 				<section id="contact_section">
 					<h2>Contacto</h3>
 					<label>Correo:</label>
@@ -43,22 +44,22 @@
 					</a>
 				</section>
 			</section>
-			<article class="dump_article">
+			<article class="dump_article" id="about">
 				<h3>Un poco sobre mí</h3>
-				<p>
+				<p id="about-presentation">
 					Hola! me llamo Luis y soy ingeniero de software graduado en la 
-					Escuala de Ingeniería Informática del Software de la Universidad de Oviedo.
+					Escala de Ingeniería Informática del Software de la Universidad de Oviedo.
 				</p>
-				<p>
+				<p id="about-more">
 					Originalmente nacido en Madrid, me mudé a Oviedo a los 7 años y he vivido aquí desde
 					entonces, yo me considero una persona bastante inclinada hacia el mundo artístico, especialmente en la parte musical 
 					(toco un instrumento y medio).
 				</p>
-				<p>
+				<p id="about-experience">
 					En su día hice prácticas empresariales en CapGemini y ahora estoy tratando de profundizar mi educación en el máster
 					de Ingeniería Web de la Universidad de Oviedo.
 				</p>
-				<p>
+				<p id="about-funfact">
 					Otro pequeño detalle sobre mí es que se me da espectacularmente mal hacer páginas web.
 				</p>
 			</article>
