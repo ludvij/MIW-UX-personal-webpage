@@ -12,21 +12,22 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
-		integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous">
-	</script>
+	<link rel="stylesheet" href="pagefind/pagefind-ui.css">
+	<script src="pagefind/pagefind-ui.js"></script>
 </head>
 
 <body>
+	<script src="src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+	</header>
 	<main>
-		<section id="section_nav">
-			<script src="src/generate_nav.js" type="module"></script>
-		</section>
-		<section class="main_section" id="cat-section">
-			<h1>Calcetines (gato)</h1>
+		<section class="main_section">
+			<h1 id="hobbies-videogames">Calcetines (gato)</h1>
 			<p>Tengo un gato que se llama calcetines, tiene 15 años</p>
 			<p>
-				Es un gato bastante cariñoso, pero por desgracia tiene hipotiroidismo, lo cual le cansa un montón de problemas, entre los cuales se encuentran:
+				Es un gato bastante cariñoso, pero por desgracia tiene hipotiroidismo, lo cual le cansa un montón de
+				problemas, entre los cuales se encuentran:
 				tensión alta, un soplo en el corazón, deregulation del hambre...
 			</p>
 			<section id="photo_grid">
@@ -53,6 +54,15 @@
 			</section>
 		</section>
 	</main>
+	<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
 </body>
 
 </html>

@@ -12,34 +12,35 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
-		integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous">
-	</script>
+	<link rel="stylesheet" href="pagefind/pagefind-ui.css">
+	<script src="pagefind/pagefind-ui.js"></script>
 </head>
 
 <body>
+	<script src="src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+	</header>
 	<main>
-		<section id="section_nav">
-			<script src="src/generate_nav.js" type="module"></script>
-		</section>
 		<section class="main_section">
 			<h1>Intereses</h1>
-			<section id="interests-films">
-				<h2>Películas</h2>
+			<section>
+				<h2 id="interests-films">Películas</h2>
 				<p>Éstas son algunas películas que me han gustado</p>
-				<article class="interest" id="film-secondhandlions">
-					<h3>El secreto de los McCann (Secondhand Lions)</h3>
+				<article class="interest">
+					<h3 id="film-secondhandlions">El secreto de los McCann (Secondhand Lions)</h3>
 					<p><i>Tim McCanlies</i></p>
 					<p>
-						No me parece que la película sea una obra maestra ni nada por el estilo, pero la vi en el momento
+						No me parece que la película sea una obra maestra ni nada por el estilo, pero la vi en el
+						momento
 						correcto en el sitio correcto.
 					</p>
 					<p>
 						<a href="https://www.imdb.com/title/tt0327137/">IMDb</a>
 					</p>
 				</article>
-				<article class="interest" id="film-onecutofthedead">
-					<h3>One Cut of the dead</h3>
+				<article class="interest">
+					<h3 id="film-onecutofthedead">One Cut of the dead</h3>
 					<p><i>Shin'ichirō Ueda</i></p>
 					<p>
 						La ví este verano con mis amigos, me flipó lo única e interesante que era.
@@ -48,8 +49,8 @@
 						<a href="https://www.imdb.com/title/tt7914416/">IMDb</a>
 					</p>
 				</article>
-				<article class="interest" id="film-tintin">
-					<h3>Las Aventuras de Tintín (2011)</h3>
+				<article class="interest">
+					<h3 id="film-tintin">Las Aventuras de Tintín (2011)</h3>
 					<p><i>Steven Spielberg</i></p>
 					<p>
 						Desde pequeño siempre me han gustado los comics y mi abuelo tenía la colección de Tintín entera,
@@ -61,11 +62,11 @@
 				</article>
 			</section>
 			<hr>
-			<section id="interests-music">
-				<h2>Discos de música</h2>
+			<section>
+				<h2 id="interests-music">Discos de música</h2>
 				<p>Como con las películas, algunos de mis discos favoritos</p>
-				<article class="interest" id="music-imaginaldisk">
-					<h3>Imaginal Disk</h3>
+				<article class="interest">
+					<h3 id="music-imaginaldisk">Imaginal Disk</h3>
 					<p><i>Magdalena Bay</i></p>
 					<p>
 						Ya seguía al grupo después de que sacaran su disco anterior y a mi este disco simplemente me
@@ -76,8 +77,8 @@
 						<a href="https://rateyourmusic.com/release/album/magdalena-bay/imaginal-disk/">RYM</a>
 					</p>
 				</article>
-				<article class="interest" id="music-aja">
-					<h3>Aja</h3>
+				<article class="interest">
+					<h3 id="music-aja">Aja</h3>
 					<p><i>Steely Dan</i></p>
 					<p>
 						Fue el 49 aniversario hace como nada, Aja fue un disco grabado y producido de una forma tan
@@ -85,12 +86,13 @@
 						siempre, otro disco que a mi parecer no tiene skips.
 					</p>
 					<p>
-						<a href="https://www.youtube.com/watch?v=XRj0Ohg-y1A&list=OLAK5uy_nNSt2pxzqur9OlUok2h9mJDnHQ1YqFA-8">YT</a>,
+						<a
+							href="https://www.youtube.com/watch?v=XRj0Ohg-y1A&list=OLAK5uy_nNSt2pxzqur9OlUok2h9mJDnHQ1YqFA-8">YT</a>,
 						<a href="https://rateyourmusic.com/release/album/steely-dan/aja/">RYM</a>
 					</p>
 				</article>
-				<article class="interest" id="music-numberofthebeast">
-					<h3>The Number of the Beast</h3>
+				<article class="interest">
+					<h3 id="music-numberofthebeast">The Number of the Beast</h3>
 					<p><i>Iron Maiden</i></p>
 					<p>
 						Jeje, I like the melodies and the harmony over thirds.<br>
@@ -99,13 +101,23 @@
 						mete Total Eclipse y quita Gangland es infinitamente mejor.
 					</p>
 					<p>
-						<a href="https://www.youtube.com/watch?v=iQ5JAxPqum0&list=OLAK5uy_kJWCqs9IWd6VTIMEipf_f3rI0q289WDKY">YT</a>,
+						<a
+							href="https://www.youtube.com/watch?v=iQ5JAxPqum0&list=OLAK5uy_kJWCqs9IWd6VTIMEipf_f3rI0q289WDKY">YT</a>,
 						<a href="https://rateyourmusic.com/release/album/iron-maiden/the-number-of-the-beast/">RYM</a>
 					</p>
 				</article>
 			</section>
 		</section>
 	</main>
+		<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
 </body>
 
 </html>

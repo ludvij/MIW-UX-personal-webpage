@@ -8,6 +8,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"pagefind": "^1.6.0",
 		"vite": "^8.3.8"
 	}
 }
