@@ -12,16 +12,16 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
-		integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous">
-	</script>
+	<link rel="stylesheet" href="pagefind/pagefind-ui.css">
+	<script src="pagefind/pagefind-ui.js"></script>
 </head>
 
 <body>
+	<script src="src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+	</header>
 	<main>
-		<section id="section_nav">
-			<script src="src/generate_nav.js" type="module"></script>
-		</section>
 		<section class="main_section" id="section_proj">
 			<h1>Mis proyectos</h1>
 			<article id="project-emoo">
@@ -72,6 +72,15 @@
 			</article>
 		</section>
 	</main>
+	<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
 </body>
 
 </html>

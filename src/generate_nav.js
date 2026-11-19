@@ -2,28 +2,25 @@ import nav_map from './nav_map.json' with {type: 'json'}
 
 
 export function generate_nav() {
-	const url = $(location).attr('href');
-	const tag_nav = $('<nav></nav>')
+	const url = window.location.href
+	const nav = document.createElement('nav')
 	for(let entry in nav_map)
 	{
-		const a = $('<a></a>', {
-			"text": nav_map[entry].text,
-			"accesskey": nav_map[entry].accesskey,
-		})
+		const a = document.createElement('a')
+		a.accesskey = nav_map[entry].accesskey
+		a.textContent = nav_map[entry].text
 		if (url.includes(entry) || !url.includes('html') && entry == 'index.html')
 		{	
-			a.addClass('nav_active')
+			a.classList.add('nav_active')
 		}
 		else
 		{
-			a.attr('href',entry)
+			a.href = entry
 		}
-		tag_nav.append(a)
+		nav.append(a)
 	}
-	$('#section_nav').append(tag_nav)
+	document.body.insertBefore(nav, document.body.firstChild)
 }
-
-$(document).ready(_ => {
-	generate_nav()
+document.addEventListener("DOMContentLoaded", function () {
+    generate_nav()
 })
-

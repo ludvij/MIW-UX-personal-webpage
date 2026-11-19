@@ -12,36 +12,37 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
-		integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous">
-	</script>
+	<link rel="stylesheet" href="pagefind/pagefind-ui.css">
+	<script src="pagefind/pagefind-ui.js"></script>
 </head>
 
 <body>
+	<script src="src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+	</header>
 	<main>
-		<section id="section_nav">
-			<script src="src/generate_nav.js" type="module"></script>
-		</section>
 		<section class="main_section" id="section_hobbies">
 			<h1>Aficiones</h1>
-			<article id="hobbies-music">
-				<h2>Música</h2>
+			<article>
+				<h2 id="hobbies-music">Música</h2>
 				<p>
 					Toco la guitarra y estoy aprendiendo el piano a paso glacial. En la guitarra me estoy aprendiendo
 					"Take Me" de Cassiopeia y en el
 					piano me estoy aprendiendo "A Nocturne for All" del juego "Ender Lilies"
 				</p>
 			</article>
-			<article id="hobbies-programming">
-				<h2>Programación</h2>
+			<article>
+				<h2 id="hobbies-programming">Programación</h2>
 				<p>
 					Me gusta programar de forma recreativa de vez en cuando, de hecho, este año hice y acabé el
-					<a href="https://adventofcode.com/">Advent of code</a>, <a href="https://github.com/ludvij/advent-of-code-2025">aquí</a>
+					<a href="https://adventofcode.com/">Advent of code</a>, <a
+						href="https://github.com/ludvij/advent-of-code-2025">aquí</a>
 					se pueden ver mis soluciones en C++
 				</p>
 			</article>
-			<article id="hobbies-videogames">
-				<h2>Videojuegos</h2>
+			<article>
+				<h2 id="hobbies-videogames">Videojuegos</h2>
 				<p>
 					Llevo jugando a videojuegos desde que tengo alrededor de 6 años, ahora mismo estoy jugando con mis
 					amigos al aclamado MMORPG
@@ -51,6 +52,15 @@
 			</article>
 		</section>
 	</main>
+		<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
 </body>
 
 </html>
