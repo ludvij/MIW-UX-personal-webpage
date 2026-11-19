@@ -1,22 +1,42 @@
 {
-	"index.html": {
-		"text": "Inicio",
-		"accesskey": "i"
+	"Inicio": {
+		"href": "index.html",
+		"accesskey": "i",
+		"text": {
+			"es": "Inicio",
+			"en": "Start"
+		}
 	},
-	"intereses.html": {
-		"text": "Intereses",
-		"accesskey": "n"
+	"Intereses": {
+		"href": "intereses.html",
+		"accesskey": "n",
+		"text": {
+			"es": "Intereses",
+			"en": "Interests"
+		}
 	},
-	"proyectos.html": {
-		"text": "Proyectos",
-		"accesskey": "p"
+	"Proyectos": {
+		"href": "proyectos.html",
+		"accesskey": "p",
+		"text": {
+			"es": "Proyectos",
+			"en": "Projects"
+		}
 	},
-	"aficiones.html": {
-		"text": "Aficiones",
-		"accesskey": "a"
+	"Aficiones": {
+		"href": "aficiones.html",
+		"accesskey": "a",
+		"text": {
+			"es": "Aficiones",
+			"en": "Hobbies"
+		}
 	},
-	"gato.html": {
-		"text": "Calcetines",
-		"accesskey": "c"
+	"Calcetines": {
+		"href": "gato.html",
+		"accesskey": "c",
+		"text": {
+			"es": "Calcetines",
+			"en": "Calcetines"
+		}
 	}
 }
