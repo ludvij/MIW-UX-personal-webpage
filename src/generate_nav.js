@@ -6,21 +6,36 @@ export function generate_nav() {
 	const nav = document.createElement('nav')
 	for(let entry in nav_map)
 	{
+		const data = nav_map[entry]
 		const a = document.createElement('a')
-		a.accesskey = nav_map[entry].accesskey
-		a.textContent = nav_map[entry].text
-		if (url.includes(entry) || !url.includes('html') && entry == 'index.html')
+		a.accesskey = data.accesskey
+		a.href = data.href
+		a.textContent = data['text']['es']
+
+		if (url.includes(a.href) || !url.includes('html') && entry == 'Inicio')
 		{	
-			a.classList.add('nav_active')
+			a.classList.add('nav-active')
 		}
-		else
+
+
+		for (let lang in data['text'])
 		{
-			a.href = entry
+			if (url.includes(`/${lang}/`))
+			{
+				a.textContent = data[lang]
+			}
+		}
+
+		if (url.includes('/en/'))
+		{
+			a.textContent = data['text']['en']
 		}
 		nav.append(a)
 	}
-	document.body.insertBefore(nav, document.body.firstChild)
+	document.body.insertBefore(nav, document.body.children[2])
 }
+
+
 document.addEventListener("DOMContentLoaded", function () {
     generate_nav()
 })

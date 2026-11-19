@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UO275739 - Projects</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../pagefind/pagefind-ui.css">
+	<script src="../pagefind/pagefind-ui.js"></script>
+	<script src="../src/show_nav.js"></script>
+</head>
+
+<body>
+	<script src="../src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+		<button class="nav-button" onclick="shownav()">
+			<img src="../public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
+		</button>
+	</header>
+	<main>
+		<section class="main_section" id="section_proj">
+			<h1>My Projects</h1>
+			<article id="project-emoo">
+				<h2>
+					<a href="https://github.com/ludvij/EMOO">NES Emulator from an Educational Perspective</a>
+				</h2>
+				<p>
+					Bachelor's Thesis in which an emulator was developed with a focus on
+					the proper functioning of its internals and the ability to inspect/display an emulator's internals
+					in real time.
+				</p>
+				<h3>Technologies</h3>
+				<ul>
+					<li>C++</li>
+					<li>ImGui</li>
+					<li>Vulkan</li>
+					<li>CMake</li>
+				</ul>
+			</article>
+			<article id="project-libvarf">
+				<h2>
+					<a href="https://github.com/ludvij/LibVARF">LibVARF</a>
+				</h2>
+				<p>
+					C++ library designed for file and directory handling, as well as
+					handling zip archiving and virtual directories.
+				</p>
+				<h3>Technologies</h3>
+				<ul>
+					<li>C++</li>
+					<li>zlib</li>
+					<li>CMake</li>
+				</ul>
+			</article>
+			<article id="project-compressionstreams">
+				<h2>
+					<a href="https://github.com/ludvij/compression_streams">compression_streams</a>
+				</h2>
+				<p>
+					C++ library for wrapping compression algorithms into std::stream.
+				</p>
+				<h3>Technologies</h3>
+				<ul>
+					<li>C++</li>
+					<li>zlib</li>
+					<li>CMake</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+	<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
+</body>
+
+</html>
