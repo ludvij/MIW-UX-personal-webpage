@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="../pagefind/pagefind-ui.css">
 	<script src="../pagefind/pagefind-ui.js"></script>
 	<script src="../src/show_nav.js"></script>
+	<script src="../src/change_lang.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,10 @@
 		<button class="nav-button" onclick="shownav()">
 			<img src="../public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
 		</button>
+		<select name="lang" id="i-lang" onchange="change_lang()" autocomplete="off">
+			<option value="#" selected>EN</option>
+			<option value="../aficiones.html">ES</option>
+		</select>
 	</header>
 	<main>
 		<section class="main_section" id="section_hobbies">
@@ -47,14 +52,15 @@
 			<article>
 				<h2 id="hobbies-videogames">Video Games</h2>
 				<p>
-					I've been playing video games since I was around 6 years old. Right now, I'm playing the acclaimed MMORPG
+					I've been playing video games since I was around 6 years old. Right now, I'm playing the acclaimed
+					MMORPG
 					Final Fantasy XIV with my friends. <br>
 					My favorite genres are usually Roguelike or RPG.
 				</p>
 			</article>
 		</section>
 	</main>
-		<script>
+	<script>
 		window.addEventListener("DOMContentLoaded", () => {
 			new PagefindUI(
 				{

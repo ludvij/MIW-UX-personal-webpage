@@ -158,6 +158,8 @@ header {
 	margin-top: .5em;
 }
 
+
+
 .interest p i {
 	color: #bbb;
 	margin-left: .5em;
@@ -189,11 +191,19 @@ header {
 #contact_section {
 	display: grid;
 	grid-template-columns: 6em auto;
-	row-gap: .35em;
+}
+
+#contact_section a {
+	display: flex;
+	align-items: center;
+	height: 2.3em;
 }
 
 #contact_section label {
 	color: #bbb;
+	display: flex;
+	align-items: center;
+	height: 2.3em;
 }
 
 #contact_section h2 {
@@ -211,7 +221,6 @@ nav {
 	padding: var(--global-padding);
 	display: flex;
 	flex-direction: column;
-	gap: .75em;
 }
 
 @keyframes navSlideDown {
@@ -354,4 +363,10 @@ button img {
 	--pagefind-ui-background: var(--global-color-bg2);
 	--pagefind-ui-font: "Cascadia Mono", monospace;
 	--pagefind-ui-text: #ffffff;
+}
+nav a {
+	height: 2.3em;
+	display: flex;
+	align-items: center;
+	padding: var(--global-padding-small);
 }

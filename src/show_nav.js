@@ -7,7 +7,6 @@ const shownav = () => {
 	}
 	else
 	{
-
 		nav.classList.add('nav-open')
 	}
 

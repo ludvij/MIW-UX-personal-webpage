@@ -23,6 +23,7 @@ export function generate_nav() {
 			if (url.includes(`/${lang}/`))
 			{
 				a.textContent = data[lang]
+				break
 			}
 		}
 

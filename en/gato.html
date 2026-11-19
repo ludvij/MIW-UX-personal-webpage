@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="../pagefind/pagefind-ui.css">
 	<script src="../pagefind/pagefind-ui.js"></script>
 	<script src="../src/show_nav.js"></script>
+	<script src="../src/change_lang.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,10 @@
 		<button class="nav-button" onclick="shownav()">
 			<img src="../public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
 		</button>
+		<select name="lang" id="i-lang" onchange="change_lang()" autocomplete="off">
+			<option value="#" selected>EN</option>
+			<option value="../gato.html">ES</option>
+		</select>
 	</header>
 	<main>
 		<section class="main_section">
