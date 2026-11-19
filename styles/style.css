@@ -230,8 +230,6 @@ header {
 
 	header {
 		grid-area: header;
-		position: sticky;
-		top: 0;
 	}
 
 	nav {
@@ -276,6 +274,7 @@ main {
 	#personal_img {
 		max-width: 40dvh;
 	}
+
 	nav {
 		display: none;
 	}
