@@ -14,24 +14,27 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="pagefind/pagefind-ui.css">
 	<script src="pagefind/pagefind-ui.js"></script>
-
+	<script src="src/show_nav.js"></script>
 </head>
 
 <body>
 	<script src="src/generate_nav.js" type="module"></script>
 	<header>
 		<div id="search"></div>
+		<button class="nav-button" onclick="shownav()">
+			<img src="public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
+		</button>
 	</header>
 	<main>
 		<section class="main_section index-section">
-			<h1>Luis Vijande González</h1>
+			<h1>Luis Vijande</h1>
 			<section id="section_image">
 				<img id="personal_img" src="public/media/personal_img.jpg" alt="Imagen del autor de la página">
 				<section id="contact_section">
-					<h2>Contacto</h3>
+					<h2>Contacto</h2>
 						<label>Correo:</label>
-						<a href="mailto:Uo275739@uniovi.es">
-							Uo275739@uniovi.es
+						<a href="mailto:UO275739@uniovi.es">
+							UO275739@uniovi.es
 						</a>
 						<label>GitHub:</label>
 						<a href="https://github.com/ludvij">
@@ -47,7 +50,7 @@
 				<h3>Un poco sobre mí</h3>
 				<p id="about-presentation">
 					Hola! me llamo Luis y soy ingeniero de software graduado en la
-					Escala de Ingeniería Informática del Software de la Universidad de Oviedo.
+					Escuela de Ingeniería Informática del Software de la Universidad de Oviedo.
 				</p>
 				<p id="about-more">
 					Originalmente nacido en Madrid, me mudé a Oviedo a los 7 años y he vivido aquí desde

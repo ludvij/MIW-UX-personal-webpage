@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UO275739 - Hobbies</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../pagefind/pagefind-ui.css">
+	<script src="../pagefind/pagefind-ui.js"></script>
+	<script src="../src/show_nav.js"></script>
+</head>
+
+<body>
+	<script src="../src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+		<button class="nav-button" onclick="shownav()">
+			<img src="../public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
+		</button>
+	</header>
+	<main>
+		<section class="main_section" id="section_hobbies">
+			<h1>Hobbies</h1>
+			<article>
+				<h2 id="hobbies-music">Music</h2>
+				<p>
+					I play the guitar and am learning the piano at a glacial pace. On guitar, I'm learning
+					"Take Me" by Casiopea, and on the
+					piano, I'm learning "A Nocturne for All" from the game "Ender Lilies".
+				</p>
+			</article>
+			<article>
+				<h2 id="hobbies-programming">Programming</h2>
+				<p>
+					I like coding recreationally from time to time; in fact, this year I did and finished
+					<a href="https://adventofcode.com/">Advent of Code</a>, and you can see my C++ solutions <a
+						href="https://github.com/ludvij/advent-of-code-2025">here</a>.
+				</p>
+			</article>
+			<article>
+				<h2 id="hobbies-videogames">Video Games</h2>
+				<p>
+					I've been playing video games since I was around 6 years old. Right now, I'm playing the acclaimed MMORPG
+					Final Fantasy XIV with my friends. <br>
+					My favorite genres are usually Roguelike or RPG.
+				</p>
+			</article>
+		</section>
+	</main>
+		<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
+</body>
+
+</html>

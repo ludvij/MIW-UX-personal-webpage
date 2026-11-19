@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UO275739 - Calcetines</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../pagefind/pagefind-ui.css">
+	<script src="../pagefind/pagefind-ui.js"></script>
+	<script src="../src/show_nav.js"></script>
+</head>
+
+<body>
+	<script src="../src/generate_nav.js" type="module"></script>
+	<header>
+		<div id="search"></div>
+		<button class="nav-button" onclick="shownav()">
+			<img src="../public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
+		</button>
+	</header>
+	<main>
+		<section class="main_section">
+			<h1 id="hobbies-videogames">Calcetines (cat)</h1>
+			<p>I have a cat named Calcetines, he is 15 years old.</p>
+			<p>
+				He is a pretty affectionate cat, but unfortunately he has hyperthyroidism, which causes him a lot of
+				problems, including:
+				high blood pressure, a heart murmur, appetite dysregulation...
+			</p>
+			<section id="photo_grid">
+				<h2>Photos of Calcetines</h2>
+				<div>
+					<img src="../public/media/calcetines/gato_1.jpg" alt="photo of my cat in a bucket">
+					<img src="../public/media/calcetines/gato_2.jpg" alt="photo of my cat drinking from a mug">
+					<img src="../public/media/calcetines/gato_3.jpg" alt="photo of my cat in his bed">
+					<img src="../public/media/calcetines/gato_4.jpg" alt="photo of my cat on top of a piano">
+				</div>
+			</section>
+			<section>
+				<h2>Audio of Calcetines</h2>
+				<audio controls preload="metadata">
+					<source src="../public/media/calcetines/gato.ogg" type="audio/ogg">
+				</audio>
+			</section>
+			<section>
+				<h2>Video of Calcetines</h2>
+				<video controls>
+					<source src="../public/media/calcetines/gato.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</section>
+		</section>
+	</main>
+	<script>
+		window.addEventListener("DOMContentLoaded", () => {
+			new PagefindUI(
+				{
+					element: "#search",
+					showSubResults: true,
+				})
+		})
+	</script>
+</body>
+
+</html>
