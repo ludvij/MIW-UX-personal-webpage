@@ -204,12 +204,13 @@ header {
 	height: 2.3em;
 }
 
-#contact_section label {
+#contact_section h3 {
 	color: #bbb;
 	background-color: inherit;
 	display: flex;
 	align-items: center;
 	height: 2.3em;
+	font-size: inherit;
 }
 
 #contact_section h2 {
@@ -370,7 +371,7 @@ button.active
 }
 
 
-button img {
+button.nav-button img {
 	width: 3em;
 	max-width: 100%;
 	aspect-ratio: 1 / 1;
@@ -387,6 +388,8 @@ button img {
 	--pagefind-ui-font: "Cascadia Mono", monospace;
 	--pagefind-ui-text: #ffffff;
 }
+
+
 nav a {
 	height: 2.3em;
 	display: flex;
