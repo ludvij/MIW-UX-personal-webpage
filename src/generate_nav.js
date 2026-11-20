@@ -39,4 +39,8 @@ export function generate_nav() {
 
 document.addEventListener("DOMContentLoaded", function () {
     generate_nav()
+	if (!location.href.includes('.html'))
+	{
+		location.href += 'index.html'
+	}
 })

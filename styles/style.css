@@ -28,7 +28,6 @@ body {
 	background-color: var(--global-color-bg);
 	color: inherit;
 	font-family: "Cascadia Mono", monospace;
-	font-size: 1em;
 	font-size: calc(15px + 0.390625vw);
 
 }
@@ -141,6 +140,7 @@ video {
 header {
 	width: 100%;
 	background-color: var(--global-color-bg2);
+	color: inherit;
 	padding: var(--global-padding);
 }
 
@@ -162,6 +162,7 @@ header {
 
 .interest p i {
 	color: #bbb;
+	background-color: inherit;
 	margin-left: .5em;
 	margin-bottom: .2em;
 }
@@ -170,6 +171,7 @@ header {
 	width: 90%;
 	height: 1px;
 	color: lightgreen;
+	background-color: inherit;
 }
 
 .main_section {
@@ -182,6 +184,7 @@ header {
 
 #section_proj li {
 	color: #bbb;
+	background-color: inherit;
 }
 
 #section_hobbies p {
@@ -201,6 +204,7 @@ header {
 
 #contact_section label {
 	color: #bbb;
+	background-color: inherit;
 	display: flex;
 	align-items: center;
 	height: 2.3em;
@@ -218,6 +222,7 @@ header {
 
 nav {
 	background-color: var(--global-color-bg2);
+	color: inherit;
 	padding: var(--global-padding);
 	display: flex;
 	flex-direction: column;
@@ -273,7 +278,8 @@ nav {
 
 
 a.nav-active {
-	color: lightblue
+	color: lightblue;
+	background-color: inherit;
 }
 
 a.nav-active::before {
@@ -309,6 +315,17 @@ main {
 		display: none;
 	}
 
+	#i-lang:not(.lang-open)
+	{
+		display: none;
+	}
+
+	#i-lang {
+		height: 48px;
+		grid-column: 1 /-1;
+		margin-top: 1em;
+	}
+
 	.nav-button {
 		display: flex;
 		align-items: center;
@@ -319,6 +336,7 @@ main {
 		height: 48px;
 		padding: 10px;
 		background-color: transparent;
+		color: inherit;
 		border: 2px solid var(--global-color-text);
 		border-radius: 6px;
 		cursor: pointer;
@@ -327,9 +345,9 @@ main {
 
 	.nav-button:hover,
 	.nav-button:focus-visible {
-		background-color: var(--global-color-focus);
-		border-color: lightgreen;
+		background-color: var(--global-color-focus);	
 		outline: none;
+		color: inherit;
 	}
 
 	.nav-open {
@@ -342,8 +360,11 @@ main {
 		display: grid;
 		grid-template-columns: 1fr auto;
 	}
+}
 
-
+button.active 
+{
+	border-color: lightgreen;
 }
 
 
@@ -369,4 +390,24 @@ nav a {
 	display: flex;
 	align-items: center;
 	padding: var(--global-padding-small);
+}
+
+#i-lang {
+	font-size: inherit;
+	border: 2px solid white; 
+	border-radius: 7px;
+	padding: var(--global-padding-very_small) var(--global-padding-small); 
+	cursor: pointer;
+}
+
+#i-lang:hover,
+#i-lang:focus-visible {
+	background-color: var(--global-color-focus); 
+	outline: none;
+	color: inherit;
+}
+
+#i-lang option {
+	background-color: var(--global-color-bg2);
+	color: var(--global-color-text); 
 }
