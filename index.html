@@ -26,14 +26,18 @@
 			<img src="public/hamburger-menu-svgrepo-com.svg" alt="navigation_menu">
 		</button>
 		<select name="lang" id="i-lang" onchange="change_lang()" autocomplete="off">
-			<option value="#" selected>ES</option>
-			<option value="/en/">EN</option>
+			<option value="es" selected>
+				🇪🇸 ES
+			</option>
+			<option value="en">
+				🇬🇧 EN
+			</option>
 		</select>
 	</header>
 	<main>
 		<section class="main_section index-section">
 			<h1>Luis Vijande</h1>
-			<section id="section_image">
+			<div id="section_image">
 				<img id="personal_img" src="public/media/personal_img.jpg" alt="Imagen del autor de la página">
 				<section id="contact_section">
 					<h2>Contacto</h2>
@@ -50,7 +54,7 @@
 							linkedin.com/in/l-vijande
 						</a>
 				</section>
-			</section>
+			</div>
 			<article class="dump_article" id="about">
 				<h3>Un poco sobre mí</h3>
 				<p id="about-presentation">
